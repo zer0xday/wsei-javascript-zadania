@@ -2,7 +2,7 @@
 function createArray(number) {
     var newArray = [10];
 
-    for (var counter = 1; ; counter <= number) {
+    for (var counter = 0; counter <= number; counter++) {
         newArray.push(counter);
     }
 
