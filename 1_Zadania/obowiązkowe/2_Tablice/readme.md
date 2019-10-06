@@ -11,7 +11,7 @@ Np.
 ```JavaScript
 distFromAvarage([1,2,3,4,5,6,7]) => [3,2,1,0,1,2,3] (średnia z tablicy wejściowej to 4)
 distFromAvarage([1,1,1,1]) => [0,0,0,0] (średnia z tablicy wejściowej to 1)
-distFromAvarage([2,8,3,7]) => [3,3,2,2] (średnia z tablicy wejściowej to 5)
+distFromAvarage([2,8,3,7]) => [-3,3,2,2] (średnia z tablicy wejściowej to 5)
 ```
 
 
