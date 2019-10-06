@@ -3,11 +3,10 @@ function distFromAverage(array) {
     const arraySum = array.reduce((prev, next) => prev + next);
     const averageNumber = arraySum / array.length;
     
-    const outputArray = array.map((variable) => {
-        return variable - averageNumber;
+    const outputArray = array.map((value) => {
+        return value - averageNumber;
     });
 
-    console.log(outputArray);
     return outputArray;
 }
 
