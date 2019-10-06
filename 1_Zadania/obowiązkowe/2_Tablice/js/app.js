@@ -38,20 +38,29 @@ function multiply(array) {
 const mul = multiply([2, 4, 5, 10]);
 console.log(mul);
 
-// zad 5 
-// todo
+// zad 5
 function getEvenAverage(array) {
-    let evenValues = null;
+    const evenValues = [];
     
-    evenValues = array.map((value) => {
-        if (value % 2) return value;
+    array.forEach((el) => {
+        if (el % 2 === 0) evenValues.push(el); 
     });
+
+    if (!evenValues.length) return null; 
 
     const evenAverageValue = evenValues.reduce((prev, next) => prev + next);
     const averageValue = evenAverageValue / evenValues.length;
 
-    console.log(averageValue);
     return averageValue;
 }
 
-getEvenAverage([1, 2, 3, 4, 5, 6]);
+const evenAverage = getEvenAverage([1, 2, 3, 4, 5, 6, 7, 8]);
+console.log(evenAverage);
+
+// zad 6
+function sortArray(array) {
+    return array.sort((x, y) => x - y);
+}
+
+const sortedArray = sortArray([145,11,3,64,4,6,10]);
+console.log(sortedArray);
