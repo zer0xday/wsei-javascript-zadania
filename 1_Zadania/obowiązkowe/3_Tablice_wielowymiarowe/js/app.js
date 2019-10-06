@@ -13,11 +13,3 @@ var task2Array = [
     [5, 6, 7, 8],
     [9, 10, 11, 12]
 ];
-
-function printTable(tab) {
-    for (let i = 0; i < tab.length; i++) {
-        console.log(tab[i]);
-    }
-}
-
-printTable(task1Array);
