@@ -11,6 +11,3 @@ function distFromAverage(array) {
 }
 
 distFromAverage([1,1,1,1]);
-
-// 2.
-const array 
