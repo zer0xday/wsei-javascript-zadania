@@ -61,3 +61,17 @@ recipe.ingredients = [
 ];
 
 showProps(recipe);
+
+// zad 6
+var spoon = {
+    isExist: true
+}
+
+var fork = spoon;
+fork.isExist = false;
+
+console.log(spoon.isExist);
+
+// łyzka nie istnieje, gdyż przypisaliśmy ją do zmiennej fork
+// istniałaby dalej gdybyśmy zamiast przypisywać obiekt do drugiej zmiennej 
+// zrobili kopię struktury obiektu
