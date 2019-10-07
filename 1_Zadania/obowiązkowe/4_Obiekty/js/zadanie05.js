@@ -31,3 +31,10 @@ var animals = [
     }
 
 ]
+
+// TODO
+for (let i = 0; i < Object.keys(animals).length; i++) {
+    for (let prop in animals[i]) {
+        console.log(animals[i][prop]);
+    }
+}
