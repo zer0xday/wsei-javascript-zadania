@@ -11,4 +11,4 @@ callOtherFunction(function (a, b) {
     console.log("Druga liczba", b)
     console.log("Wynik", a + b)
 })
-
+// TODO

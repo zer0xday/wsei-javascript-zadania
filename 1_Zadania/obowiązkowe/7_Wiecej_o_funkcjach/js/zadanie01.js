@@ -4,7 +4,7 @@
  * Przesledz krok po kroku kazda linijke kodu. Kazda!
  * Napisz komentarze dla kazdej z linijek kodu
  */
-
+// TODO
 //Twoj komentarz ...
 function sortArray() {
 

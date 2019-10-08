@@ -4,29 +4,33 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-
-//Twoj komentarz ...
+// TODO
+// deklaracja funkcji o nazwie jeden
 function jeden() {
 
-    //Twoj komentarz ...
+    // deklaracja pierwszej zmiennej
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    // deklaracja drugiej fukcji
     function dwa() {
 
-        //Twoj komentarz ...
+        // wywolanie zmiennej z funkcji jeden
+        // mamy do niej dostęp, gdyż funkcja o nazwie dwa
+        // została zadeklarowana w środku funkcji o nazwie jeden
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        // deklaracja drugiej zmiennej
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    // wyowalanie funkcji o nazwie dwa
     dwa();
 
-    //Twoj komentarz ...
+    // brak dostępu do zmiennej, gdyż została ona zadeklarowana
+    // w funkcji o nazwie dwa, dlatego też funkcja o nazwie jeden
+    // nie "widzi" tej zmiennej - została ona zadeklarowana w innym scopie
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+// wywolanie funkcji o nazwie jeden
 jeden()
