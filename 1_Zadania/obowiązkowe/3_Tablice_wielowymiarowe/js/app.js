@@ -49,8 +49,8 @@ for (let i = 0; i < task2Array[0].length; i++) {
 
 // zad 2.2
 console.log(task2Array[1].length);
-// todo 2.3
 
+// zad 2.3
 for (let i = 0; i < task2Array.length; i++) {
     for (let j = 0; j < task2Array[i].length; j++) {
         console.log(task2Array[i][j]);
