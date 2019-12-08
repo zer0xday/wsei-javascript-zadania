@@ -5,21 +5,22 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 // TODO
-//Twoj komentarz ...
+//deklaracja funkcji o nazwie sortArray
 function sortArray() {
 
-    //Twoj komentarz ...
+    //deklaracja tablicy o nazwie points
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    //wywołanie funkcji sortującej na tablicy 'points'
+    //funkcja sortuje elementy rosnąco
     points.sort(function (a, b) {
-        //Twoj komentarz ...
+        //odejmowanie bieżącego elementu tablicy od kolejnego
         return a - b;
     });
 
-    //Twoj komentarz ...
+    //zwrocenie tablicy
     return points;
 }
 
-//Twoj komentarz ...
+//wywolanie funkcji sortArray
 sortArray();
