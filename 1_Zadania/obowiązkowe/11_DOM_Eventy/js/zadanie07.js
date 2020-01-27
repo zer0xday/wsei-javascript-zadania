@@ -1,10 +1,10 @@
-// todo
 document.addEventListener("DOMContentLoaded", function () {
 	document.querySelector('#element1').addEventListener('click', function (e) {
 		console.log('Event in #element1 fired!');
 	});
 
 	document.querySelector('#element2').addEventListener('click', function (e) {
+		e.stopPropagation();
 		console.log('Event in #element2 fired!');
 	});
 
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	document.querySelector('#element5').addEventListener('click', function (e) {
+		e.stopImmediatePropagation();
 		console.log('Event in #element5 fired!');
 	});
 	document.querySelector('#element5').addEventListener('click', function (e) {

@@ -1,23 +1,18 @@
-const parents = document.querySelectorAll('.parent');
+// zad 0a & 0b
+document.addEventListener('DOMContentLoaded', () => {
+	let parent;
+	for (parent of window.document.querySelectorAll('.parent')) {
+		parent.addEventListener('mouseover', function() {
+			this.querySelector('.children').style.display = 'block';
+		});
 
-// zad 0a
-parents.forEach((parent) => {
-	let children = parent.querySelector('.children');
+		parent.addEventListener('mouseout', function() {
+			function hideChildrenElement() {
+				this.querySelector('.children').style.display = 'none';
+			}
 
-	parent.addEventListener('mouseover', () => {
-		children.style.display = 'flex';
-	});
-
-	parent.addEventListener('mouseout', function() {
-		children.style.display = 'none';
-
-		// zad 0b
-		// TODO
-		function hideChildrenElement() {
-			console.log(this);
-		};
-
-	});
+			this.hideChildrenElement = hideChildrenElement;
+			this.hideChildrenElement();
+		});
+	}
 });
-
-

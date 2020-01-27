@@ -1,13 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const box = document.querySelector('.box');
-	const global = {
-		X: document.querySelector('span#globalX'),
-		Y: document.querySelector('span#globalY')
-	};
+	let globalXEl = document.querySelector('#globalX'),
+		globalYEl = document.querySelector('#globalY'),
+		localXEl = document.querySelector('#localX'),
+		localYEl = document.querySelector('#localY'),
+		divEl = document.querySelector('div');
 
-	const local = {
-		X: document.querySelector('span#localX'),
-		Y: document.querySelector('span#localY')
-	};
-	// todo
+	divEl.addEventListener('mousemove', ev => {
+		localXEl.innerHTML = ev.clientX;
+		localYEl.innerHTML = ev.clientY;
+	});
+
+	window.addEventListener('mousemove', ev => {
+		globalXEl.innerHTML = ev.clientX;
+		globalYEl.innerHTML = ev.clientY;
+	});
 });
