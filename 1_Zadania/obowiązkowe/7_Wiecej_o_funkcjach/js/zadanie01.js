@@ -1,26 +1,26 @@
-
 /**
  * Zagniezdzanie funkcji.
  * Przesledz krok po kroku kazda linijke kodu. Kazda!
  * Napisz komentarze dla kazdej z linijek kodu
  */
-// TODO
-//deklaracja funkcji o nazwie sortArray
+
+//sygnatura funkcji sortArray, rozpoczecie definiowania
 function sortArray() {
 
-    //deklaracja tablicy o nazwie points
+    //utworzenie zmiennej points i przypisanie do niej tablicy liczb
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //wywołanie funkcji sortującej na tablicy 'points'
-    //funkcja sortuje elementy rosnąco
+    //wykonanie na obiekcie tablicy metody 'sort' i przekazanie do niej callbacka definiującego metodę sortowania
     points.sort(function (a, b) {
-        //odejmowanie bieżącego elementu tablicy od kolejnego
+        //jeśli po odjęciu b od a wynik będzie ujemny, element a będzie uznany za mniejszy (zostanie przesunięty ku początkowi)
+        // -               ||                - równy 0, elementy zostana uznane za równe (zostaną na swoich pozycjach)
+        // -               ||                - dodatni, element a będzie uznany za większy (zostanie przesunięty ku końcowi)
         return a - b;
     });
 
-    //zwrocenie tablicy
+    //zwracamy posortowaną tablicę od najmniejszej do największej wartości
     return points;
 }
 
-//wywolanie funkcji sortArray
+//wywołujemy funkcję 'sortArray', jednak nic nie robimy ze zwracaną wartością
 sortArray();
